@@ -105,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: const Icon(CupertinoIcons.add),
               ),
             ),
-            body: index == 0 ? MainScreen(state.expenses) : const MyChart());
+            body: index == 0 ? MainScreen(state.expenses) : const StatScreen());
       } else {
         return const Scaffold(
           body: Center(
