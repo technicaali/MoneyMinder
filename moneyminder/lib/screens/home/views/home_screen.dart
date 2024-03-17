@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:expense_repository/expense_repository.dart';
-import 'package:expenses_tracker/screens/add_expense/blocs/create_categorybloc/create_category_bloc.dart';
-import 'package:expenses_tracker/screens/add_expense/blocs/get_categories_bloc/get_categories_bloc.dart';
-import 'package:expenses_tracker/screens/add_expense/views/add_expense.dart';
-import 'package:expenses_tracker/screens/home/blocs/get_expenses_bloc/get_expenses_bloc.dart';
-import 'package:expenses_tracker/screens/home/views/main_screen.dart';
+import 'package:moneyminder/screens/add_expense/blocs/create_category_bloc/create_category_bloc.dart';
+import 'package:moneyminder/screens/add_expense/blocs/get_categories_bloc/get_categories_bloc.dart';
+import 'package:moneyminder/screens/add_expense/views/add_expense.dart';
+import 'package:moneyminder/screens/home/blocs/get_expenses_bloc/get_expenses_bloc.dart';
+import 'package:moneyminder/screens/home/views/main_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -105,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: const Icon(CupertinoIcons.add),
               ),
             ),
-            body: index == 0 ? MainScreen(state.expenses) : const StatScreen());
+            body: index == 0 ? MainScreen(state.expenses) : const MyChart());
       } else {
         return const Scaffold(
           body: Center(
