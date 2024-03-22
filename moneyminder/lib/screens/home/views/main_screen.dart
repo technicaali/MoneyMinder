@@ -100,7 +100,7 @@ class MainScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   const Text(
-                    '\$ 4800.00',
+                    '\$ 0.00',
                     style: TextStyle(
                         fontSize: 40,
                         color: Colors.white,
@@ -139,7 +139,7 @@ class MainScreen extends StatelessWidget {
                                       fontWeight: FontWeight.w400),
                                 ),
                                 Text(
-                                  '€ 2500.00',
+                                  '\$ 0.00',
                                   style: TextStyle(
                                       fontSize: 14,
                                       color: Colors.white,
@@ -176,7 +176,7 @@ class MainScreen extends StatelessWidget {
                                       fontWeight: FontWeight.w400),
                                 ),
                                 Text(
-                                  '€ 800.00',
+                                  '\$ 0.00',
                                   style: TextStyle(
                                       fontSize: 14,
                                       color: Colors.white,
